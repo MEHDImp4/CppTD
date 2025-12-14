@@ -1,25 +1,62 @@
-#include "WeatherStation.h"
-#include "Analyzer.h"
+#include "../include/WeatherStation.h"
+#include "../include/Analyzer.h"
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include <ctime>
+#include <filesystem>
 #include <sstream>
+
+using namespace std;
+namespace fs = std::filesystem;
 
 // Declarations des fonctions
 void displayMenu();
-std::string getCurrentDateTime();
+string getCurrentDateTime();
+string locateDataFile(int argc, char* argv[]);
 void addMeasurementInteractive(WeatherStation& station);
 void removeMeasurementInteractive(WeatherStation& station);
 void displayAnalysisMenu(WeatherStation& station);
 
-int main() {
-    WeatherStation station;
-    std::string dataFile = "data/measurements.txt";
+string locateDataFile(int argc, char* argv[]) {
+    vector<fs::path> candidates;
 
-    std::cout << "\n===========================================\n"
-              << "   STATION METEOROLOGIQUE\n"
-              << "===========================================\n";
+    // Current working directory candidates
+    candidates.push_back(fs::current_path() / "data/measurements.txt");
+    candidates.push_back(fs::current_path() / "src" / "data" / "measurements.txt");
+
+    // Try to use argv[0] (executable path) to locate repository root
+    if (argc > 0 && argv[0] != nullptr) {
+        try {
+            fs::path exe = fs::absolute(argv[0]);
+            fs::path exeDir = exe.parent_path();
+            candidates.push_back(exeDir / "data" / "measurements.txt");
+            candidates.push_back(exeDir.parent_path() / "data" / "measurements.txt");
+        } catch (...) {
+            // ignore filesystem errors and continue with other candidates
+        }
+    }
+
+    // A guess: repository root is parent of cwd
+    candidates.push_back(fs::current_path().parent_path() / "data" / "measurements.txt");
+
+    for (auto &p : candidates) {
+        if (!p.empty() && fs::exists(p)) {
+            return p.string();
+        }
+    }
+
+    // Fallback to relative path (will produce the original error if not found)
+    return string("data/measurements.txt");
+}
+
+int main(int argc, char* argv[]) {
+    WeatherStation station;
+    string dataFile = locateDataFile(argc, argv);
+
+    cout << "\n===========================================\n"
+         << "   STATION METEOROLOGIQUE\n"
+         << "===========================================\n";
 
     // Charger les donnees au demarrage
     station.loadFromFile(dataFile);
@@ -29,11 +66,11 @@ int main() {
 
     while (running) {
         displayMenu();
-        std::cout << "\n  Entrez votre choix (1-8): ";
-        std::cin >> choice;
-        std::cin.ignore();  // Nettoie le buffer
+        cout << "\n  Entrez votre choix (1-8): ";
+        cin >> choice;
+        cin.ignore();  // Nettoie le buffer
 
-        std::cout << "\n";
+        cout << "\n";
 
         switch (choice) {
             case 1: {
@@ -49,16 +86,16 @@ int main() {
                 break;
             }
             case 4: {
-                std::cout << "  Chargement en cours...\n";
+                cout << "  Chargement en cours...\n";
                 if (station.loadFromFile(dataFile)) {
-                    std::cout << "  Chargement reussi.\n";
+                    cout << "  Chargement reussi.\n";
                 }
                 break;
             }
             case 5: {
-                std::cout << "  Sauvegarde en cours...\n";
+                cout << "  Sauvegarde en cours...\n";
                 if (station.saveToFile(dataFile)) {
-                    std::cout << "  Sauvegarde reussie.\n";
+                    cout << "  Sauvegarde reussie.\n";
                 }
                 break;
             }
@@ -68,28 +105,28 @@ int main() {
             }
             case 7: {
                 char confirm;
-                std::cout << "  Etes-vous sur? (o/n): ";
-                std::cin >> confirm;
-                std::cin.ignore();
+                cout << "  Etes-vous sur? (o/n): ";
+                cin >> confirm;
+                cin.ignore();
                 if (confirm == 'o' || confirm == 'O') {
                     station.clear();
-                    std::cout << "  Toutes les donnees ont ete effacees.\n";
+                    cout << "  Toutes les donnees ont ete effacees.\n";
                 }
                 break;
             }
             case 8: {
-                std::cout << "  Au revoir!\n";
+                cout << "  Au revoir!\n";
                 running = false;
                 break;
             }
             default: {
-                std::cout << "  Choix invalide.\n";
+                cout << "  Choix invalide.\n";
             }
         }
 
         if (running && choice >= 1 && choice <= 7) {
-            std::cout << "\n  Appuyez sur Entrée pour continuer...";
-            std::cin.get();
+            cout << "\n  Appuyez sur Entrée pour continuer...";
+            cin.get();
         }
     }
 
@@ -99,53 +136,53 @@ int main() {
 }
 
 void displayMenu() {
-    std::cout << "\n" << std::string(60, '=') << "\n";
-    std::cout << "  MENU PRINCIPAL\n";
-    std::cout << std::string(60, '=') << "\n";
-    std::cout << "  1. Ajouter une nouvelle mesure\n"
-              << "  2. Afficher toutes les mesures\n"
-              << "  3. Supprimer une mesure\n"
-              << "  4. Charger les mesures depuis fichier\n"
-              << "  5. Sauvegarder les mesures\n"
-              << "  6. Afficher les analyses\n"
-              << "  7. Effacer toutes les donnees\n"
-              << "  8. Quitter\n"
-              << std::string(60, '=');
+    cout << "\n" << string(60, '=') << "\n";
+    cout << "  MENU PRINCIPAL\n";
+    cout << string(60, '=') << "\n";
+    cout << "  1. Ajouter une nouvelle mesure\n"
+         << "  2. Afficher toutes les mesures\n"
+         << "  3. Supprimer une mesure\n"
+         << "  4. Charger les mesures depuis fichier\n"
+         << "  5. Sauvegarder les mesures\n"
+         << "  6. Afficher les analyses\n"
+         << "  7. Effacer toutes les donnees\n"
+         << "  8. Quitter\n"
+         << string(60, '=');
 }
 
-std::string getCurrentDateTime() {
-    auto now = std::time(nullptr);
-    auto tm = *std::localtime(&now);
-    std::ostringstream oss;
-    oss << std::put_time(&tm, "%Y-%m-%d %H:%M");
+string getCurrentDateTime() {
+    auto now = time(nullptr);
+    auto tm = *localtime(&now);
+    ostringstream oss;
+    oss << put_time(&tm, "%Y-%m-%d %H:%M");
     return oss.str();
 }
 
 void addMeasurementInteractive(WeatherStation& station) {
-    std::cout << std::string(60, '-') << "\n"
-              << "  AJOUTER UNE NOUVELLE MESURE\n"
-              << std::string(60, '-') << "\n";
+    cout << string(60, '-') << "\n"
+         << "  AJOUTER UNE NOUVELLE MESURE\n"
+         << string(60, '-') << "\n";
 
     float temp, humidity, windSpeed;
-    std::string windDir, dateTime;
+    string windDir, dateTime;
 
-    std::cout << "  Temperature (°C): ";
-    std::cin >> temp;
-    std::cin.ignore();
+    cout << "  Temperature (°C): ";
+    cin >> temp;
+    cin.ignore();
 
-    std::cout << "  Humidite (%): ";
-    std::cin >> humidity;
-    std::cin.ignore();
+    cout << "  Humidite (%): ";
+    cin >> humidity;
+    cin.ignore();
 
-    std::cout << "  Vitesse du vent (km/h): ";
-    std::cin >> windSpeed;
-    std::cin.ignore();
+    cout << "  Vitesse du vent (km/h): ";
+    cin >> windSpeed;
+    cin.ignore();
 
-    std::cout << "  Direction du vent (N/S/E/O/NE/NO/SE/SO): ";
-    std::getline(std::cin, windDir);
+    cout << "  Direction du vent (N/S/E/O/NE/NO/SE/SO): ";
+    getline(cin, windDir);
 
-    std::cout << "  Date/Heure (format: 2025-01-01 14:30) [Entree pour heure actuelle]: ";
-    std::getline(std::cin, dateTime);
+    cout << "  Date/Heure (format: 2025-01-01 14:30) [Entree pour heure actuelle]: ";
+    getline(cin, dateTime);
     if (dateTime.empty()) {
         dateTime = getCurrentDateTime();
     }
@@ -153,35 +190,35 @@ void addMeasurementInteractive(WeatherStation& station) {
     Measurement m(temp, humidity, windSpeed, windDir, dateTime);
     station.addMeasurement(m);
 
-    std::cout << "\n  Mesure ajoutee avec succes!\n"
-              << "  Total: " << station.getCount() << " mesure(s).\n";
+    cout << "\n  Mesure ajoutee avec succes!\n"
+         << "  Total: " << station.getCount() << " mesure(s).\n";
 }
 
 void removeMeasurementInteractive(WeatherStation& station) {
     if (station.getCount() == 0) {
-        std::cout << "  Aucune mesure a supprimer.\n";
+        cout << "  Aucune mesure a supprimer.\n";
         return;
     }
 
-    std::cout << std::string(60, '-') << "\n"
-              << "  SUPPRIMER UNE MESURE\n"
-              << std::string(60, '-') << "\n";
+    cout << string(60, '-') << "\n"
+         << "  SUPPRIMER UNE MESURE\n"
+         << string(60, '-') << "\n";
 
     station.listAll();
 
     int index;
-    std::cout << "\n  Entrez le numero de la mesure a supprimer (1 a "
-              << station.getCount() << "): ";
-    std::cin >> index;
-    std::cin.ignore();
+    cout << "\n  Entrez le numero de la mesure a supprimer (1 a "
+         << station.getCount() << "): ";
+    cin >> index;
+    cin.ignore();
 
     index--; // Convertir en index 0-based
 
     if (station.removeMeasurement(index)) {
-        std::cout << "\n  Mesure supprimee.\n"
-                  << "  Total: " << station.getCount() << " mesure(s) restante(s).\n";
+        cout << "\n  Mesure supprimee.\n"
+             << "  Total: " << station.getCount() << " mesure(s) restante(s).\n";
     } else {
-        std::cout << "\n  Numero invalide.\n";
+        cout << "\n  Numero invalide.\n";
     }
 }
 
@@ -189,34 +226,34 @@ void displayAnalysisMenu(WeatherStation& station) {
     const auto& measurements = station.getMeasurements();
 
     if (measurements.empty()) {
-        std::cout << "  Aucune mesure disponible pour l'analyse.\n";
+        cout << "  Aucune mesure disponible pour l'analyse.\n";
         return;
     }
 
-    std::cout << std::string(60, '=') << "\n"
-              << "  ANALYSES STATISTIQUES\n"
-              << std::string(60, '=') << "\n";
+    cout << string(60, '=') << "\n"
+         << "  ANALYSES STATISTIQUES\n"
+         << string(60, '=') << "\n";
 
-    std::cout << std::fixed << std::setprecision(2);
+    cout << fixed << setprecision(2);
 
     float avgTemp = Analyzer::averageTemperature(measurements);
     float minTemp = Analyzer::minTemperature(measurements);
     float maxTemp = Analyzer::maxTemperature(measurements);
     float avgHumidity = Analyzer::averageHumidity(measurements);
     float avgWind = Analyzer::averageWindSpeed(measurements);
-    std::string trend = Analyzer::detectTemperatureTrend(measurements);
+    string trend = Analyzer::detectTemperatureTrend(measurements);
 
-    std::cout << "\n  TEMPERATURE:\n"
-              << "      - Moyenne: " << avgTemp << "°C\n"
-              << "      - Minimum: " << minTemp << "°C\n"
-              << "      - Maximum: " << maxTemp << "°C\n"
-              << "      - Tendance (3 dernieres): " << trend << "\n";
+    cout << "\n  TEMPERATURE:\n"
+         << "      - Moyenne: " << avgTemp << "°C\n"
+         << "      - Minimum: " << minTemp << "°C\n"
+         << "      - Maximum: " << maxTemp << "°C\n"
+         << "      - Tendance (3 dernieres): " << trend << "\n";
 
-    std::cout << "\n  HUMIDITE:\n"
-              << "      - Moyenne: " << avgHumidity << "%\n";
+    cout << "\n  HUMIDITE:\n"
+         << "      - Moyenne: " << avgHumidity << "%\n";
 
-    std::cout << "\n  VENT:\n"
-              << "      - Vitesse moyenne: " << avgWind << " km/h\n";
+    cout << "\n  VENT:\n"
+         << "      - Vitesse moyenne: " << avgWind << " km/h\n";
 
-    std::cout << "\n" << std::string(60, '=') << "\n";
+    cout << "\n" << string(60, '=') << "\n";
 }
