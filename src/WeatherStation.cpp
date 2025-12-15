@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <iomanip>
+#include "../include/ConsoleUtf8.h"
 
 // Constructeur
 WeatherStation::WeatherStation() {}
@@ -33,27 +34,28 @@ int WeatherStation::getCount() const {
 // Afficher toutes les mesures
 void WeatherStation::listAll() const {
     if (measurements.empty()) {
-        std::cout << "\n  Aucune mesure stockee.\n";
+        ConsoleUtf8::writeLine("\n  Aucune mesure stockee.");
         return;
     }
 
-    std::cout << "\n" << std::string(60, '=') << "\n";
-    std::cout << "  LISTE DE TOUTES LES MESURES (" << measurements.size() << " total)\n";
-    std::cout << std::string(60, '=') << "\n";
+    ConsoleUtf8::write("\n");
+    ConsoleUtf8::write(std::string(60, '=') + "\n");
+    ConsoleUtf8::write("  LISTE DE TOUTES LES MESURES (" + std::to_string(measurements.size()) + " total)\n");
+    ConsoleUtf8::write(std::string(60, '=') + "\n");
 
     for (size_t i = 0; i < measurements.size(); ++i) {
-        std::cout << "\n  [Mesure #" << (i + 1) << "]\n";
-        std::cout << measurements[i].toString() << "\n";
+        ConsoleUtf8::write("\n  [Mesure #" + std::to_string(i + 1) + "]\n");
+        ConsoleUtf8::write(measurements[i].toString() + "\n");
     }
 
-    std::cout << "\n" << std::string(60, '=') << "\n";
+    ConsoleUtf8::write("\n" + std::string(60, '=') + "\n");
 }
 
 // Sauvegarder en fichier
 bool WeatherStation::saveToFile(const std::string& path) {
     std::ofstream file(path);
     if (!file.is_open()) {
-        std::cerr << "  Erreur: impossible d'ouvrir " << path << " en ecriture.\n";
+        ConsoleUtf8::writeLine("  Erreur: impossible d'ouvrir " + path + " en ecriture.");
         return false;
     }
 
@@ -62,8 +64,7 @@ bool WeatherStation::saveToFile(const std::string& path) {
     }
 
     file.close();
-    std::cout << "  " << measurements.size() << " mesure(s) sauvegardee(s) dans "
-              << path << "\n";
+    ConsoleUtf8::writeLine("  " + std::to_string(measurements.size()) + " mesure(s) sauvegardee(s) dans " + path);
     return true;
 }
 
@@ -71,7 +72,7 @@ bool WeatherStation::saveToFile(const std::string& path) {
 bool WeatherStation::loadFromFile(const std::string& path) {
     std::ifstream file(path);
     if (!file.is_open()) {
-        std::cerr << "  Fichier " << path << " introuvable.\n";
+        ConsoleUtf8::writeLine("  Fichier " + path + " introuvable.");
         return false;
     }
 
@@ -85,7 +86,7 @@ bool WeatherStation::loadFromFile(const std::string& path) {
     }
 
     file.close();
-    std::cout << "  " << count << " mesure(s) chargee(s) depuis " << path << "\n";
+    ConsoleUtf8::writeLine("  " + std::to_string(count) + " mesure(s) chargee(s) depuis " + path);
     return true;
 }
 

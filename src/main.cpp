@@ -6,6 +6,12 @@
 #include <ctime>
 #include <filesystem>
 #include <sstream>
+#include <clocale>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
+#include "../include/ConsoleUtf8.h"
 
 using namespace std;
 namespace fs = std::filesystem;
@@ -54,9 +60,16 @@ int main(int argc, char* argv[]) {
     WeatherStation station;
     string dataFile = locateDataFile(argc, argv);
 
-    cout << "\n===========================================\n"
-         << "   STATION METEOROLOGIQUE\n"
-         << "===========================================\n";
+#ifdef _WIN32
+    // Activer UTF-8 pour la console Windows
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
+
+    // Utiliser la locale système (peut aider pour l'affichage des accents)
+    std::setlocale(LC_ALL, "");
+
+    ConsoleUtf8::write("\n===========================================\n   STATION METEOROLOGIQUE\n===========================================\n");
 
     // Charger les donnees au demarrage
     station.loadFromFile(dataFile);
@@ -66,7 +79,7 @@ int main(int argc, char* argv[]) {
 
     while (running) {
         displayMenu();
-        cout << "\n  Entrez votre choix (1-8): ";
+        ConsoleUtf8::write("\n  Entrez votre choix (1-8): ");
         cin >> choice;
         cin.ignore();  // Nettoie le buffer
 
@@ -86,16 +99,16 @@ int main(int argc, char* argv[]) {
                 break;
             }
             case 4: {
-                cout << "  Chargement en cours...\n";
+                ConsoleUtf8::writeLine("  Chargement en cours...");
                 if (station.loadFromFile(dataFile)) {
-                    cout << "  Chargement reussi.\n";
+                    ConsoleUtf8::writeLine("  Chargement reussi.");
                 }
                 break;
             }
             case 5: {
-                cout << "  Sauvegarde en cours...\n";
+                ConsoleUtf8::writeLine("  Sauvegarde en cours...");
                 if (station.saveToFile(dataFile)) {
-                    cout << "  Sauvegarde reussie.\n";
+                    ConsoleUtf8::writeLine("  Sauvegarde reussie.");
                 }
                 break;
             }
@@ -105,27 +118,27 @@ int main(int argc, char* argv[]) {
             }
             case 7: {
                 char confirm;
-                cout << "  Etes-vous sur? (o/n): ";
+                ConsoleUtf8::write("  Etes-vous sur? (o/n): ");
                 cin >> confirm;
                 cin.ignore();
                 if (confirm == 'o' || confirm == 'O') {
                     station.clear();
-                    cout << "  Toutes les donnees ont ete effacees.\n";
+                    ConsoleUtf8::writeLine("  Toutes les donnees ont ete effacees.");
                 }
                 break;
             }
             case 8: {
-                cout << "  Au revoir!\n";
+                ConsoleUtf8::writeLine("  Au revoir!");
                 running = false;
                 break;
             }
             default: {
-                cout << "  Choix invalide.\n";
+                ConsoleUtf8::writeLine("  Choix invalide.");
             }
         }
 
         if (running && choice >= 1 && choice <= 7) {
-            cout << "\n  Appuyez sur Entrée pour continuer...";
+            ConsoleUtf8::write("\n  Appuyez sur Entrée pour continuer...");
             cin.get();
         }
     }
@@ -136,18 +149,21 @@ int main(int argc, char* argv[]) {
 }
 
 void displayMenu() {
-    cout << "\n" << string(60, '=') << "\n";
-    cout << "  MENU PRINCIPAL\n";
-    cout << string(60, '=') << "\n";
-    cout << "  1. Ajouter une nouvelle mesure\n"
-         << "  2. Afficher toutes les mesures\n"
-         << "  3. Supprimer une mesure\n"
-         << "  4. Charger les mesures depuis fichier\n"
-         << "  5. Sauvegarder les mesures\n"
-         << "  6. Afficher les analyses\n"
-         << "  7. Effacer toutes les donnees\n"
-         << "  8. Quitter\n"
-         << string(60, '=');
+    ConsoleUtf8::write("\n");
+    ConsoleUtf8::write(std::string(60, '=') + "\n");
+    ConsoleUtf8::write("  MENU PRINCIPAL\n");
+    ConsoleUtf8::write(std::string(60, '=') + "\n");
+    ConsoleUtf8::write(
+        "  1. Ajouter une nouvelle mesure\n"
+        "  2. Afficher toutes les mesures\n"
+        "  3. Supprimer une mesure\n"
+        "  4. Charger les mesures depuis fichier\n"
+        "  5. Sauvegarder les mesures\n"
+        "  6. Afficher les analyses\n"
+        "  7. Effacer toutes les donnees\n"
+        "  8. Quitter\n"
+    );
+    ConsoleUtf8::write(std::string(60, '='));
 }
 
 string getCurrentDateTime() {
@@ -166,22 +182,22 @@ void addMeasurementInteractive(WeatherStation& station) {
     float temp, humidity, windSpeed;
     string windDir, dateTime;
 
-    cout << "  Temperature (°C): ";
+    ConsoleUtf8::write("  Temperature (°C): ");
     cin >> temp;
     cin.ignore();
 
-    cout << "  Humidite (%): ";
+    ConsoleUtf8::write("  Humidite (%): ");
     cin >> humidity;
     cin.ignore();
 
-    cout << "  Vitesse du vent (km/h): ";
+    ConsoleUtf8::write("  Vitesse du vent (km/h): ");
     cin >> windSpeed;
     cin.ignore();
 
-    cout << "  Direction du vent (N/S/E/O/NE/NO/SE/SO): ";
+    ConsoleUtf8::write("  Direction du vent (N/S/E/O/NE/NO/SE/SO): ");
     getline(cin, windDir);
 
-    cout << "  Date/Heure (format: 2025-01-01 14:30) [Entree pour heure actuelle]: ";
+    ConsoleUtf8::write("  Date/Heure (format: 2025-01-01 14:30) [Entree pour heure actuelle]: ");
     getline(cin, dateTime);
     if (dateTime.empty()) {
         dateTime = getCurrentDateTime();
@@ -190,70 +206,72 @@ void addMeasurementInteractive(WeatherStation& station) {
     Measurement m(temp, humidity, windSpeed, windDir, dateTime);
     station.addMeasurement(m);
 
-    cout << "\n  Mesure ajoutee avec succes!\n"
-         << "  Total: " << station.getCount() << " mesure(s).\n";
+    ConsoleUtf8::writeLine("\n  Mesure ajoutee avec succes!");
+    ConsoleUtf8::writeLine("  Total: " + std::to_string(station.getCount()) + " mesure(s).");
 }
 
 void removeMeasurementInteractive(WeatherStation& station) {
     if (station.getCount() == 0) {
-        cout << "  Aucune mesure a supprimer.\n";
+        ConsoleUtf8::writeLine("  Aucune mesure a supprimer.");
         return;
     }
 
-    cout << string(60, '-') << "\n"
-         << "  SUPPRIMER UNE MESURE\n"
-         << string(60, '-') << "\n";
+    ConsoleUtf8::write(std::string(60, '-') + "\n");
+    ConsoleUtf8::writeLine("  SUPPRIMER UNE MESURE");
+    ConsoleUtf8::write(std::string(60, '-') + "\n");
 
     station.listAll();
 
     int index;
-    cout << "\n  Entrez le numero de la mesure a supprimer (1 a "
-         << station.getCount() << "): ";
+    ConsoleUtf8::write("\n  Entrez le numero de la mesure a supprimer (1 a " + std::to_string(station.getCount()) + "): ");
     cin >> index;
     cin.ignore();
 
     index--; // Convertir en index 0-based
 
     if (station.removeMeasurement(index)) {
-        cout << "\n  Mesure supprimee.\n"
-             << "  Total: " << station.getCount() << " mesure(s) restante(s).\n";
+        ConsoleUtf8::writeLine("\n  Mesure supprimee.");
+        ConsoleUtf8::writeLine("  Total: " + std::to_string(station.getCount()) + " mesure(s) restante(s).");
     } else {
-        cout << "\n  Numero invalide.\n";
+        ConsoleUtf8::writeLine("\n  Numero invalide.");
     }
 }
 
 void displayAnalysisMenu(WeatherStation& station) {
     const auto& measurements = station.getMeasurements();
 
-    if (measurements.empty()) {
-        cout << "  Aucune mesure disponible pour l'analyse.\n";
-        return;
-    }
+        if (measurements.empty()) {
+           ConsoleUtf8::writeLine("  Aucune mesure disponible pour l'analyse.");
+           return;
+        }
 
-    cout << string(60, '=') << "\n"
-         << "  ANALYSES STATISTIQUES\n"
-         << string(60, '=') << "\n";
+        std::ostringstream oss;
+        oss << std::fixed << std::setprecision(2);
 
-    cout << fixed << setprecision(2);
+        float avgTemp = Analyzer::averageTemperature(measurements);
+        float minTemp = Analyzer::minTemperature(measurements);
+        float maxTemp = Analyzer::maxTemperature(measurements);
+        float avgHumidity = Analyzer::averageHumidity(measurements);
+        float avgWind = Analyzer::averageWindSpeed(measurements);
+        std::string trend = Analyzer::detectTemperatureTrend(measurements);
 
-    float avgTemp = Analyzer::averageTemperature(measurements);
-    float minTemp = Analyzer::minTemperature(measurements);
-    float maxTemp = Analyzer::maxTemperature(measurements);
-    float avgHumidity = Analyzer::averageHumidity(measurements);
-    float avgWind = Analyzer::averageWindSpeed(measurements);
-    string trend = Analyzer::detectTemperatureTrend(measurements);
+        oss << "\n" << std::string(60, '=') << "\n";
+        oss << "  ANALYSES STATISTIQUES\n";
+        oss << std::string(60, '=') << "\n";
 
-    cout << "\n  TEMPERATURE:\n"
-         << "      - Moyenne: " << avgTemp << "°C\n"
-         << "      - Minimum: " << minTemp << "°C\n"
-         << "      - Maximum: " << maxTemp << "°C\n"
-         << "      - Tendance (3 dernieres): " << trend << "\n";
+        oss << "\n  TEMPERATURE:\n";
+        oss << "      - Moyenne: " << avgTemp << "°C\n";
+        oss << "      - Minimum: " << minTemp << "°C\n";
+        oss << "      - Maximum: " << maxTemp << "°C\n";
+        oss << "      - Tendance (3 dernieres): " << trend << "\n";
 
-    cout << "\n  HUMIDITE:\n"
-         << "      - Moyenne: " << avgHumidity << "%\n";
+        oss << "\n  HUMIDITE:\n";
+        oss << "      - Moyenne: " << avgHumidity << "%\n";
 
-    cout << "\n  VENT:\n"
-         << "      - Vitesse moyenne: " << avgWind << " km/h\n";
+        oss << "\n  VENT:\n";
+        oss << "      - Vitesse moyenne: " << avgWind << " km/h\n";
 
-    cout << "\n" << string(60, '=') << "\n";
+        oss << "\n" << std::string(60, '=') << "\n";
+
+        ConsoleUtf8::write(oss.str());
 }
