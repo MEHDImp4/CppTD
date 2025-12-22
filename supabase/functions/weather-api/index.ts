@@ -1,4 +1,4 @@
-import { createClient } from 'jsr:@supabase/supabase-js@2';
+import { DB } from 'https://deno.land/x/sqlite/mod.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -15,6 +15,28 @@ interface Measurement {
   date_time: string;
 }
 
+// Ensure data directory exists and DB is initialized
+try {
+  await Deno.mkdir('./data', { recursive: true });
+} catch (_e) {}
+
+const dbPath = './data/weather.db';
+const db = new DB(dbPath);
+
+db.query(`
+  CREATE TABLE IF NOT EXISTS measurements (
+    id TEXT PRIMARY KEY,
+    temperature REAL NOT NULL,
+    humidity REAL NOT NULL,
+    wind_speed REAL NOT NULL,
+    wind_direction TEXT NOT NULL,
+    date_time TEXT NOT NULL,
+    created_at TEXT DEFAULT (datetime('now'))
+  )
+`);
+
+db.query(`CREATE INDEX IF NOT EXISTS idx_measurements_date_time ON measurements(date_time DESC)`);
+
 Deno.serve(async (req: Request) => {
   // Handle CORS preflight
   if (req.method === 'OPTIONS') {
@@ -25,23 +47,21 @@ Deno.serve(async (req: Request) => {
   }
 
   try {
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
-    const supabaseKey = Deno.env.get('SUPABASE_ANON_KEY')!;
-    const supabase = createClient(supabaseUrl, supabaseKey);
-
     const url = new URL(req.url);
     const path = url.pathname.replace('/weather-api', '');
 
     // GET /measurements - Récupérer toutes les mesures
     if (path === '/measurements' && req.method === 'GET') {
-      const { data, error } = await supabase
-        .from('measurements')
-        .select('*')
-        .order('date_time', { ascending: false });
-
-      if (error) {
-        throw error;
-      }
+      const rows = [...db.query("SELECT id, temperature, humidity, wind_speed, wind_direction, date_time, created_at FROM measurements ORDER BY date_time DESC")];
+      const data = rows.map((r: any[]) => ({
+        id: r[0],
+        temperature: r[1],
+        humidity: r[2],
+        wind_speed: r[3],
+        wind_direction: r[4],
+        date_time: r[5],
+        created_at: r[6],
+      }));
 
       return new Response(JSON.stringify(data), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -51,22 +71,23 @@ Deno.serve(async (req: Request) => {
     // POST /measurements - Ajouter une mesure
     if (path === '/measurements' && req.method === 'POST') {
       const body: Measurement = await req.json();
+      const id = crypto.randomUUID();
 
-      const { data, error } = await supabase
-        .from('measurements')
-        .insert({
-          temperature: body.temperature,
-          humidity: body.humidity,
-          wind_speed: body.wind_speed,
-          wind_direction: body.wind_direction,
-          date_time: body.date_time,
-        })
-        .select()
-        .single();
+      db.query(
+        "INSERT INTO measurements (id, temperature, humidity, wind_speed, wind_direction, date_time) VALUES (?, ?, ?, ?, ?, ?)",
+        [id, body.temperature, body.humidity, body.wind_speed, body.wind_direction, body.date_time]
+      );
 
-      if (error) {
-        throw error;
-      }
+      const row = [...db.query("SELECT id, temperature, humidity, wind_speed, wind_direction, date_time, created_at FROM measurements WHERE id = ?", [id])][0];
+      const data = {
+        id: row[0],
+        temperature: row[1],
+        humidity: row[2],
+        wind_speed: row[3],
+        wind_direction: row[4],
+        date_time: row[5],
+        created_at: row[6],
+      };
 
       return new Response(JSON.stringify(data), {
         status: 201,
@@ -78,14 +99,7 @@ Deno.serve(async (req: Request) => {
     if (path.startsWith('/measurements/') && req.method === 'DELETE') {
       const id = path.split('/')[2];
 
-      const { error } = await supabase
-        .from('measurements')
-        .delete()
-        .eq('id', id);
-
-      if (error) {
-        throw error;
-      }
+      db.query("DELETE FROM measurements WHERE id = ?", [id]);
 
       return new Response(JSON.stringify({ success: true }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -94,14 +108,13 @@ Deno.serve(async (req: Request) => {
 
     // GET /analysis - Récupérer les analyses statistiques
     if (path === '/analysis' && req.method === 'GET') {
-      const { data, error } = await supabase
-        .from('measurements')
-        .select('*')
-        .order('date_time', { ascending: false });
-
-      if (error) {
-        throw error;
-      }
+      const rows = [...db.query("SELECT temperature, humidity, wind_speed, date_time FROM measurements ORDER BY date_time DESC")];
+      const data = rows.map((r: any[]) => ({
+        temperature: r[0],
+        humidity: r[1],
+        wind_speed: r[2],
+        date_time: r[3],
+      }));
 
       if (!data || data.length === 0) {
         return new Response(
@@ -172,7 +185,7 @@ Deno.serve(async (req: Request) => {
     });
   } catch (error) {
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: (error as Error).message }),
       {
         status: 500,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },

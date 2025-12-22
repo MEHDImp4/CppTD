@@ -1,11 +1,16 @@
-const API_URL = import.meta.env.VITE_SUPABASE_URL + '/functions/v1/weather-api';
-const API_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+const API_URL = SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/weather-api` : '/weather-api';
 
 const headers = {
   'Content-Type': 'application/json',
-  'Authorization': `Bearer ${API_KEY}`,
-  'apikey': API_KEY,
 };
+
+if (SUPABASE_KEY) {
+  headers['Authorization'] = `Bearer ${SUPABASE_KEY}`;
+  headers['apikey'] = SUPABASE_KEY;
+}
 
 let measurements = [];
 
