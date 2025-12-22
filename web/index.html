@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Station Météorologique</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⛅ Station Météorologique</h1>
+      <p class="subtitle">Suivez et analysez vos mesures météo en temps réel</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>📊 Analyses Statistiques</h2>
+        <div id="analysis-section" class="analysis-grid">
+          <div class="stat-card">
+            <div class="stat-label">Température moyenne</div>
+            <div class="stat-value" id="avg-temp">--</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Température min</div>
+            <div class="stat-value" id="min-temp">--</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Température max</div>
+            <div class="stat-value" id="max-temp">--</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Humidité moyenne</div>
+            <div class="stat-value" id="avg-humidity">--</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Vitesse vent moyenne</div>
+            <div class="stat-value" id="avg-wind">--</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Tendance</div>
+            <div class="stat-value trend" id="trend">--</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>➕ Ajouter une Mesure</h2>
+        <form id="add-form" class="form-grid">
+          <div class="form-group">
+            <label for="temperature">Température (°C)</label>
+            <input type="number" id="temperature" step="0.1" required>
+          </div>
+          <div class="form-group">
+            <label for="humidity">Humidité (%)</label>
+            <input type="number" id="humidity" step="0.1" min="0" max="100" required>
+          </div>
+          <div class="form-group">
+            <label for="windSpeed">Vitesse du vent (km/h)</label>
+            <input type="number" id="windSpeed" step="0.1" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="windDirection">Direction du vent</label>
+            <select id="windDirection" required>
+              <option value="N">Nord</option>
+              <option value="NE">Nord-Est</option>
+              <option value="E">Est</option>
+              <option value="SE">Sud-Est</option>
+              <option value="S">Sud</option>
+              <option value="SO">Sud-Ouest</option>
+              <option value="O">Ouest</option>
+              <option value="NO">Nord-Ouest</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="dateTime">Date et heure</label>
+            <input type="datetime-local" id="dateTime" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Ajouter la mesure</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>📋 Liste des Mesures (<span id="count">0</span>)</h2>
+        <div id="measurements-list" class="measurements-container"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
