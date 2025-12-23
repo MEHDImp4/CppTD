@@ -77,8 +77,6 @@ std::string Analyzer::detectTemperatureTrend(const std::vector<Measurement>& mea
         return "donnees insuffisantes";
     }
 
-
-
     size_t size = measurements.size();
     float temp1 = measurements[size - 3].getTemperature();
     float temp2 = measurements[size - 2].getTemperature();

@@ -13,7 +13,7 @@ L'architecture utilise **3 couches** :
 ```
 USER (Interface) → main.cpp (Affichage & Menu)
                    ↓
-LOGIC (Métier) → WeatherStation (Gestion des données) 
+LOGIC (Métier) → WeatherStation (Gestion des données)
                    ↓
 DATA → Measurement (Une seule mesure) + Analyzer (Statistiques)
 ```
@@ -41,7 +41,7 @@ Measurement(float temp = 0.0f, float hum = 0.0f, float wind = 0.0f,
     : temperature(temp), humidity(hum), windSpeed(wind),
       windDirection(dir), dateTime(time) {}
 ```
-**Explication :** 
+**Explication :**
 - Initialise tous les paramètres avec des valeurs par défaut
 - La syntaxe avec `:` s'appelle "liste d'initialisation" (plus efficace que de les assigner après)
 - Si je crée `Measurement()` sans arguments, tous les paramètres prennent leurs valeurs par défaut (0.0f, "N", "")
@@ -538,7 +538,7 @@ void addMeasurementInteractive(WeatherStation& station) {
 
     // Crée un objet Measurement
     Measurement m(temp, humidity, windSpeed, windDir, dateTime);
-    
+
     // L'ajoute à la station
     station.addMeasurement(m);
 }
@@ -554,14 +554,14 @@ void addMeasurementInteractive(WeatherStation& station) {
 void removeMeasurementInteractive(WeatherStation& station) {
     // Affiche toutes les mesures
     station.listAll();
-    
+
     // Demande l'index à supprimer
     int index;
     std::cout << "\n  Entrez le numero de la mesure a supprimer: ";
     std::cin >> index;
-    
+
     index--;  // Convertit de 1-based en 0-based
-    
+
     // Supprime
     if (station.removeMeasurement(index)) {
         std::cout << "\n  Mesure supprimee.\n";
@@ -577,12 +577,12 @@ void removeMeasurementInteractive(WeatherStation& station) {
 ```cpp
 void displayAnalysisMenu(WeatherStation& station) {
     const auto& measurements = station.getMeasurements();
-    
+
     // Calcule les statistiques
     float avgTemp = Analyzer::averageTemperature(measurements);
     float minTemp = Analyzer::minTemperature(measurements);
     float maxTemp = Analyzer::maxTemperature(measurements);
-    
+
     // Affiche les résultats
     std::cout << "  TEMPERATURE:\n"
               << "      - Moyenne: " << avgTemp << "°C\n"

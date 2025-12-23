@@ -3,8 +3,6 @@
 #include <fstream>
 #include <iomanip>
 
-
-
 WeatherStation::WeatherStation() {}
 
 
