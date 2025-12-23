@@ -1,6 +1,0 @@
-430427e9bd81871e8ad033fc113f8c077ea4bca9 Refactor project structure and update weather station components
-c573b655cca101cb5985ec554b9cce1752c31799 Added .gitignore
-55ae66cbc2d08b2f1281be4dfe63fec9a17fb7f2 Refactor code structure for improved readability and maintainability
-fd263a47882faf9d3eae0fd5b880b3a1868f3beb Refactor code structure for improved readability and maintainability
-5a7db9476545f1995a85177a9cae3d8f0f904ad0 Add weather station functionality with measurement analysis
-4ad0cfb7f134212150362fce0d0dc14327ccb8d7 Initial commit
