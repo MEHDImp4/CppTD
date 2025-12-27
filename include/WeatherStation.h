@@ -1,42 +1,21 @@
-#ifndef WEATHER_STATION_H
-#define WEATHER_STATION_H
+#ifndef WEATHERSTATION_H
+#define WEATHERSTATION_H
 
-#include "Measurement.h"
 #include <vector>
 #include <string>
-
+#include "Measurement.h"
 
 class WeatherStation {
 private:
     std::vector<Measurement> measurements;
 
 public:
-
-    WeatherStation();
-
-
-    void addMeasurement(const Measurement& measurement);
-
-
-    bool removeMeasurement(int index);
-
-
+    void addMeasurement(const Measurement& m);
+    bool removeMeasurement(int id);
+    void displayAll() const;
+    bool loadFromFile(const std::string& filename);
+    bool saveToFile(const std::string& filename) const;
     const std::vector<Measurement>& getMeasurements() const;
-
-
-    int getCount() const;
-
-
-    void listAll() const;
-
-
-    bool saveToFile(const std::string& path);
-
-
-    bool loadFromFile(const std::string& path);
-
-
-    void clear();
 };
 
-#endif // WEATHER_STATION_H
+#endif

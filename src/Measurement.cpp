@@ -1,93 +1,46 @@
-#include "../include/Measurement.h"
+#include "Measurement.h"
+#include <iostream>
 #include <sstream>
-#include <iomanip>
 
-
-Measurement::Measurement(float temp, float hum, float wind,
-                         const std::string& dir, const std::string& time)
-    : temperature(temp), humidity(hum), windSpeed(wind),
-      windDirection(dir), dateTime(time) {}
-
-
-float Measurement::getTemperature() const {
-    return temperature;
+Measurement::Measurement() {
+    id = 0;
+    temperature = 0.0f;
+    humidity = 0.0f;
+    windSpeed = 0.0f;
+    date = "";
 }
 
-float Measurement::getHumidity() const {
-    return humidity;
+Measurement::Measurement(int id, float temp, float hum, float wind, std::string d) {
+    this->id = id;
+    this->temperature = temp;
+    this->humidity = hum;
+    this->windSpeed = wind;
+    this->date = d;
 }
 
-float Measurement::getWindSpeed() const {
-    return windSpeed;
+int Measurement::getId() const { return id; }
+float Measurement::getTemperature() const { return temperature; }
+float Measurement::getHumidity() const { return humidity; }
+float Measurement::getWindSpeed() const { return windSpeed; }
+std::string Measurement::getDate() const { return date; }
+
+void Measurement::setId(int id) { this->id = id; }
+void Measurement::setTemperature(float temp) { this->temperature = temp; }
+void Measurement::setHumidity(float hum) { this->humidity = hum; }
+void Measurement::setWindSpeed(float wind) { this->windSpeed = wind; }
+void Measurement::setDate(std::string d) { this->date = d; }
+
+void Measurement::display() const {
+    std::cout << "ID: " << id << std::endl;
+    std::cout << "Temperature: " << temperature << " C" << std::endl;
+    std::cout << "Humidity: " << humidity << " %" << std::endl;
+    std::cout << "Wind Speed: " << windSpeed << " km/h" << std::endl;
+    std::cout << "Date: " << date << std::endl;
+    std::cout << "------------------------" << std::endl;
 }
 
-std::string Measurement::getWindDirection() const {
-    return windDirection;
-}
-
-std::string Measurement::getDateTime() const {
-    return dateTime;
-}
-
-
-void Measurement::setTemperature(float temp) {
-    temperature = temp;
-}
-
-void Measurement::setHumidity(float hum) {
-    humidity = hum;
-}
-
-void Measurement::setWindSpeed(float wind) {
-    windSpeed = wind;
-}
-
-void Measurement::setWindDirection(const std::string& dir) {
-    windDirection = dir;
-}
-
-void Measurement::setDateTime(const std::string& time) {
-    dateTime = time;
-}
-
-
-std::string Measurement::toString() const {
-    std::ostringstream oss;
-    oss << std::fixed << std::setprecision(1)
-        << "  Date/Heure: " << dateTime << "\n"
-        << "  Temperature: " << temperature << " C\n"
-        << "  Humidite: " << humidity << "%\n"
-        << "  Vitesse du vent: " << windSpeed << " km/h\n"
-        << "  Direction du vent: " << windDirection;
-    return oss.str();
-}
-
-
-std::string Measurement::serialize() const {
-    std::ostringstream oss;
-    oss << std::fixed << std::setprecision(2)
-        << temperature << "|" << humidity << "|" << windSpeed << "|"
-        << windDirection << "|" << dateTime;
-    return oss.str();
-}
-
-
-Measurement Measurement::deserialize(const std::string& line) {
-
-    if (line.empty() || line[0] == '#') {
-        return Measurement();
-    }
-
-    std::istringstream iss(line);
-    float temp = 0.0f, hum = 0.0f, wind = 0.0f;
-    std::string dir = "N", time = "";
-    char pipe;
-
-
-    if (iss >> temp >> pipe >> hum >> pipe >> wind >> pipe) {
-        std::getline(iss, dir, '|');
-        std::getline(iss, time);
-    }
-
-    return Measurement(temp, hum, wind, dir, time);
+std::string Measurement::toTextLine() const {
+    std::stringstream ss;
+    ss << id << ";" << temperature << ";" << humidity << ";" << windSpeed << ";" << date;
+    return ss.str();
 }

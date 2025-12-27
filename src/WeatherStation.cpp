@@ -1,96 +1,86 @@
-#include "../include/WeatherStation.h"
+#include "WeatherStation.h"
 #include <iostream>
 #include <fstream>
-#include <iomanip>
+#include <sstream>
 
-
-
-WeatherStation::WeatherStation() {}
-
-
-void WeatherStation::addMeasurement(const Measurement& measurement) {
-    measurements.push_back(measurement);
+void WeatherStation::addMeasurement(const Measurement& m) {
+    measurements.push_back(m);
 }
 
+bool WeatherStation::removeMeasurement(int id) {
+    for (size_t i = 0; i < measurements.size(); i++) {
+        if (measurements[i].getId() == id) {
+            measurements.erase(measurements.begin() + i);
+            return true;
+        }
+    }
+    return false;
+}
 
-bool WeatherStation::removeMeasurement(int index) {
-    if (index < 0 || index >= static_cast<int>(measurements.size())) {
+void WeatherStation::displayAll() const {
+    if (measurements.empty()) {
+        std::cout << "No measurements available." << std::endl;
+        return;
+    }
+    for (size_t i = 0; i < measurements.size(); i++) {
+        measurements[i].display();
+    }
+}
+
+bool WeatherStation::loadFromFile(const std::string& filename) {
+    std::ifstream file(filename.c_str());
+    if (!file.is_open()) {
         return false;
     }
-    measurements.erase(measurements.begin() + index);
+
+    measurements.clear();
+    std::string line;
+
+    while (std::getline(file, line)) {
+        if (line.empty()) continue;
+
+        std::stringstream ss(line);
+        std::string token;
+        int id;
+        float temp, hum, wind;
+        std::string date;
+
+        std::getline(ss, token, ';');
+        id = atoi(token.c_str());
+
+        std::getline(ss, token, ';');
+        temp = atof(token.c_str());
+
+        std::getline(ss, token, ';');
+        hum = atof(token.c_str());
+
+        std::getline(ss, token, ';');
+        wind = atof(token.c_str());
+
+        std::getline(ss, date, ';');
+
+        Measurement m(id, temp, hum, wind, date);
+        measurements.push_back(m);
+    }
+
+    file.close();
     return true;
 }
 
+bool WeatherStation::saveToFile(const std::string& filename) const {
+    std::ofstream file(filename.c_str());
+    if (!file.is_open()) {
+        return false;
+    }
+
+    for (size_t i = 0; i < measurements.size(); i++) {
+        file << measurements[i].toTextLine() << std::endl;
+    }
+
+    file.close();
+    return true;
+}
 
 const std::vector<Measurement>& WeatherStation::getMeasurements() const {
     return measurements;
-}
-
-
-int WeatherStation::getCount() const {
-    return measurements.size();
-}
-
-
-void WeatherStation::listAll() const {
-    if (measurements.empty()) {
-        std::cout << "\n  Aucune mesure stockee." << std::endl;
-        return;
-    }
-
-    std::cout << "\n";
-    std::cout << std::string(60, '=') + "\n";
-    std::cout << "  LISTE DE TOUTES LES MESURES (" + std::to_string(measurements.size()) + " total)\n";
-    std::cout << std::string(60, '=') + "\n";
-
-    for (size_t i = 0; i < measurements.size(); ++i) {
-        std::cout << "\n  [Mesure #" + std::to_string(i + 1) + "]\n";
-        std::cout << measurements[i].toString() + "\n";
-    }
-
-    std::cout << "\n" + std::string(60, '=') + "\n";
-}
-
-
-bool WeatherStation::saveToFile(const std::string& path) {
-    std::ofstream file(path);
-    if (!file.is_open()) {
-        std::cout << "  Erreur: impossible d'ouvrir " + path + " en ecriture." << std::endl;
-        return false;
-    }
-
-    for (const auto& measurement : measurements) {
-        file << measurement.serialize() << "\n";
-    }
-
-    file.close();
-    std::cout << "  " + std::to_string(measurements.size()) + " mesure(s) sauvegardee(s) dans " + path << std::endl;
-    return true;
-}
-
-
-bool WeatherStation::loadFromFile(const std::string& path) {
-    std::ifstream file(path);
-    if (!file.is_open()) {
-        std::cout << "  Fichier " + path + " introuvable." << std::endl;
-        return false;
-    }
-
-    std::string line;
-    int count = 0;
-    while (std::getline(file, line)) {
-        if (!line.empty()) {
-            measurements.push_back(Measurement::deserialize(line));
-            count++;
-        }
-    }
-
-    file.close();
-    std::cout << "  " + std::to_string(count) + " mesure(s) chargee(s) depuis " + path << std::endl;
-    return true;
-}
-
-
-void WeatherStation::clear() {
-    measurements.clear();
 }

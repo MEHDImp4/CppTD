@@ -1,101 +1,65 @@
-#include "../include/Analyzer.h"
-#include <algorithm>
+#include "Analyzer.h"
 #include <iostream>
 
-
-float Analyzer::averageTemperature(const std::vector<Measurement>& measurements) {
-    if (measurements.empty()) {
-        return 0.0f;
-    }
-
+float Analyzer::averageTemperature(const std::vector<Measurement>& data) {
+    if (data.empty()) return 0.0f;
     float sum = 0.0f;
-    for (const auto& m : measurements) {
-        sum += m.getTemperature();
+    for (size_t i = 0; i < data.size(); i++) {
+        sum += data[i].getTemperature();
     }
-    return sum / measurements.size();
+    return sum / data.size();
 }
 
-
-float Analyzer::minTemperature(const std::vector<Measurement>& measurements) {
-    if (measurements.empty()) {
-        return 0.0f;
-    }
-
-    float minTemp = measurements[0].getTemperature();
-    for (const auto& m : measurements) {
-        if (m.getTemperature() < minTemp) {
-            minTemp = m.getTemperature();
+float Analyzer::minTemperature(const std::vector<Measurement>& data) {
+    if (data.empty()) return 0.0f;
+    float min = data[0].getTemperature();
+    for (size_t i = 1; i < data.size(); i++) {
+        if (data[i].getTemperature() < min) {
+            min = data[i].getTemperature();
         }
     }
-    return minTemp;
+    return min;
 }
 
-
-float Analyzer::maxTemperature(const std::vector<Measurement>& measurements) {
-    if (measurements.empty()) {
-        return 0.0f;
-    }
-
-    float maxTemp = measurements[0].getTemperature();
-    for (const auto& m : measurements) {
-        if (m.getTemperature() > maxTemp) {
-            maxTemp = m.getTemperature();
+float Analyzer::maxTemperature(const std::vector<Measurement>& data) {
+    if (data.empty()) return 0.0f;
+    float max = data[0].getTemperature();
+    for (size_t i = 1; i < data.size(); i++) {
+        if (data[i].getTemperature() > max) {
+            max = data[i].getTemperature();
         }
     }
-    return maxTemp;
+    return max;
 }
 
-
-float Analyzer::averageHumidity(const std::vector<Measurement>& measurements) {
-    if (measurements.empty()) {
-        return 0.0f;
-    }
-
+float Analyzer::averageHumidity(const std::vector<Measurement>& data) {
+    if (data.empty()) return 0.0f;
     float sum = 0.0f;
-    for (const auto& m : measurements) {
-        sum += m.getHumidity();
+    for (size_t i = 0; i < data.size(); i++) {
+        sum += data[i].getHumidity();
     }
-    return sum / measurements.size();
+    return sum / data.size();
 }
 
-
-float Analyzer::averageWindSpeed(const std::vector<Measurement>& measurements) {
-    if (measurements.empty()) {
-        return 0.0f;
-    }
-
+float Analyzer::averageWindSpeed(const std::vector<Measurement>& data) {
+    if (data.empty()) return 0.0f;
     float sum = 0.0f;
-    for (const auto& m : measurements) {
-        sum += m.getWindSpeed();
+    for (size_t i = 0; i < data.size(); i++) {
+        sum += data[i].getWindSpeed();
     }
-    return sum / measurements.size();
+    return sum / data.size();
 }
 
-
-std::string Analyzer::detectTemperatureTrend(const std::vector<Measurement>& measurements) {
-    if (measurements.size() < 3) {
-        return "donnees insuffisantes";
+void Analyzer::displayStats(const std::vector<Measurement>& data) {
+    if (data.empty()) {
+        std::cout << "No data available for analysis." << std::endl;
+        return;
     }
 
-
-
-    size_t size = measurements.size();
-    float temp1 = measurements[size - 3].getTemperature();
-    float temp2 = measurements[size - 2].getTemperature();
-    float temp3 = measurements[size - 1].getTemperature();
-
-
-    float change1 = temp2 - temp1;
-    float change2 = temp3 - temp2;
-
-    const float epsilon = 0.5f;
-
-
-    if (change1 > epsilon && change2 > epsilon) {
-        return "hausse";
-    } else if (change1 < -epsilon && change2 < -epsilon) {
-        return "baisse";
-    } else {
-        return "stable";
-    }
+    std::cout << "=== Statistics ===" << std::endl;
+    std::cout << "Average Temperature: " << averageTemperature(data) << " C" << std::endl;
+    std::cout << "Min Temperature: " << minTemperature(data) << " C" << std::endl;
+    std::cout << "Max Temperature: " << maxTemperature(data) << " C" << std::endl;
+    std::cout << "Average Humidity: " << averageHumidity(data) << " %" << std::endl;
+    std::cout << "Average Wind Speed: " << averageWindSpeed(data) << " km/h" << std::endl;
 }
