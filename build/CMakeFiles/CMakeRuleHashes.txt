@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+48a6ad7946955c86a903dd671b62eb6c CMakeFiles/weather_station_console_autogen
+48a6ad7946955c86a903dd671b62eb6c CMakeFiles/weather_station_qt_autogen
+b7692a63486b20d728a96f5217a71528 weather_station_console_autogen/timestamp
+a55252e65ea316c6165a15a9d1cc1950 weather_station_qt_autogen/timestamp

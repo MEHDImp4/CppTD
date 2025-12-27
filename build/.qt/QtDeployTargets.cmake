@@ -1,0 +1,6 @@
+set(__QT_DEPLOY_TARGET_weather_station_console_FILE C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_console.exe)
+set(__QT_DEPLOY_TARGET_weather_station_console_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_weather_station_console_RUNTIME_DLLS )
+set(__QT_DEPLOY_TARGET_weather_station_qt_FILE C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_qt.exe)
+set(__QT_DEPLOY_TARGET_weather_station_qt_TYPE EXECUTABLE)
+set(__QT_DEPLOY_TARGET_weather_station_qt_RUNTIME_DLLS C:/Qt/6.10.1/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.10.1/mingw_64/bin/Qt6Core.dll)

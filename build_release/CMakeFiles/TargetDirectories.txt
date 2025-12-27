@@ -1,0 +1,8 @@
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_console.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_qt.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/edit_cache.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/rebuild_cache.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_console_autogen_timestamp_deps.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_console_autogen.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_qt_autogen_timestamp_deps.dir
+C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/weather_station_qt_autogen.dir
