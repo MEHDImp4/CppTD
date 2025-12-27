@@ -5,6 +5,11 @@ project(CppTD_Qt LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Enable Qt automatic code generation (moc/uic/rcc)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 include_directories(include)
@@ -16,6 +21,7 @@ set(SOURCES
     src/Analyzer.cpp
     src/MainWindow.cpp
     src/AddMeasurementDialog.cpp
+    resources.qrc
 )
 
 # Check if implementation files exist, otherwise we might need to adjust

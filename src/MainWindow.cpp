@@ -1,6 +1,10 @@
 #include "MainWindow.h"
 #include "AddMeasurementDialog.h"
 #include "../include/Analyzer.h"
+#include <QStatusBar>
+#include <QToolButton>
+#include <QIcon>
+#include <QSize>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QHeaderView>
@@ -45,11 +49,49 @@ void MainWindow::setupUi() {
     // Toolbar
     auto *toolbarLayout = new QHBoxLayout();
     
-    auto *btnAdd = new QPushButton("Ajouter Mesure");
-    auto *btnDelete = new QPushButton("Supprimer Selection");
-    auto *btnAnalyze = new QPushButton("Analyses");
-    auto *btnSave = new QPushButton("Sauvegarder");
-    auto *btnLoad = new QPushButton("Recharger");
+    auto *btnAdd = new QToolButton();
+    btnAdd->setText("Ajouter");
+    btnAdd->setIcon(QIcon(":/icons/resources/icons/add.svg"));
+    btnAdd->setIconSize(QSize(20,20));
+    btnAdd->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+    auto *btnDelete = new QToolButton();
+    btnDelete->setText("Supprimer");
+    btnDelete->setIcon(QIcon(":/icons/resources/icons/delete.svg"));
+    btnDelete->setIconSize(QSize(20,20));
+    btnDelete->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+    auto *btnAnalyze = new QToolButton();
+    btnAnalyze->setText("Analyses");
+    btnAnalyze->setIcon(QIcon(":/icons/resources/icons/analyze.svg"));
+    btnAnalyze->setIconSize(QSize(20,20));
+    btnAnalyze->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+    auto *btnSave = new QToolButton();
+    btnSave->setText("Sauvegarder");
+    btnSave->setIcon(QIcon(":/icons/resources/icons/save.svg"));
+    btnSave->setIconSize(QSize(20,20));
+    btnSave->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+    auto *btnLoad = new QToolButton();
+    btnLoad->setText("Recharger");
+    btnLoad->setIcon(QIcon(":/icons/resources/icons/load.svg"));
+    btnLoad->setIconSize(QSize(20,20));
+    btnLoad->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+    // Mark toolbar buttons so stylesheet can target them
+    btnAdd->setProperty("role", "toolbar");
+    btnDelete->setProperty("role", "toolbar");
+    btnAnalyze->setProperty("role", "toolbar");
+    btnSave->setProperty("role", "toolbar");
+    btnLoad->setProperty("role", "toolbar");
+
+    // Slight UI tweaks
+    btnAdd->setCursor(Qt::PointingHandCursor);
+    btnDelete->setCursor(Qt::PointingHandCursor);
+    btnAnalyze->setCursor(Qt::PointingHandCursor);
+    btnSave->setCursor(Qt::PointingHandCursor);
+    btnLoad->setCursor(Qt::PointingHandCursor);
 
     toolbarLayout->addWidget(btnAdd);
     toolbarLayout->addWidget(btnDelete);
@@ -67,6 +109,9 @@ void MainWindow::setupUi() {
     tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     tableWidget->setSelectionBehavior(QAbstractItemView::SelectRows);
     tableWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+    tableWidget->setShowGrid(false);
+    tableWidget->setAlternatingRowColors(true);
+    tableWidget->verticalHeader()->setVisible(false);
     
     mainLayout->addWidget(tableWidget);
 

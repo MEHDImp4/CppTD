@@ -76,6 +76,8 @@ bool WeatherStation::loadFromFile(const std::string& path) {
 
     std::string line;
     int count = 0;
+    // Clear existing measurements to avoid duplications when reloading
+    measurements.clear();
     while (std::getline(file, line)) {
         if (!line.empty()) {
             measurements.push_back(Measurement::deserialize(line));

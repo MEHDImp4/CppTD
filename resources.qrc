@@ -1,0 +1,9 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/icons">
+    <file>resources/icons/add.svg</file>
+    <file>resources/icons/delete.svg</file>
+    <file>resources/icons/analyze.svg</file>
+    <file>resources/icons/save.svg</file>
+    <file>resources/icons/load.svg</file>
+</qresource>
+</RCC>
