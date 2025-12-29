@@ -107,7 +107,7 @@ int main(int argc, char *argv[]) {
         QPushButton#saveBtn {
             background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
                 stop:0 #fdcb6e, stop:1 #e17055);
-            color: #2d3436;
+            color: #ffffffff;
         }
         
         QPushButton#saveBtn:hover {

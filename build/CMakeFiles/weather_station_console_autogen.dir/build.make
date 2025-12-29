@@ -70,7 +70,7 @@ CMakeFiles/weather_station_console_autogen: weather_station_console_autogen/time
 weather_station_console_autogen/timestamp: C:/Qt/6.10.1/mingw_64/bin/moc.exe
 weather_station_console_autogen/timestamp: CMakeFiles/weather_station_console_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target weather_station_console"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/mehdi/Documents/GitHub/CppTD/build/CMakeFiles/weather_station_console_autogen.dir/AutogenInfo.json ""
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/mehdi/Documents/GitHub/CppTD/build/CMakeFiles/weather_station_console_autogen.dir/AutogenInfo.json Debug
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_console_autogen/timestamp
 
 CMakeFiles/weather_station_console_autogen.dir/codegen:

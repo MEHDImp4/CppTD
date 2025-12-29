@@ -4,12 +4,11 @@
 #include <QSizePolicy>
 #include <QTableWidgetItem>
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), nextId(1), dataFile("data/measurements.txt")
+MainWindow::MainWindow(QWidget *parent):QMainWindow(parent), nextId(1), dataFile("data/measurements.txt")
 {
     setupUI();
     setWindowTitle("Weather Station");
-    setMinimumSize(800, 600);
+    setMinimumSize(800, 800);
 }
 
 MainWindow::~MainWindow() {}
@@ -54,12 +53,12 @@ void MainWindow::createInputSection(QVBoxLayout *mainLayout) {
     gridLayout->addWidget(windSpeedEdit, 1, 1);
 
     // Add visual indicator for auto-date time
-    QLabel *autoTimeLabel = new QLabel("🕒 Date & Time will be set automatically");
-    autoTimeLabel->setStyleSheet("color: #a29bfe; font-style: italic;");
+    QLabel *autoTimeLabel = new QLabel("Date & Time will be set automatically");
+    autoTimeLabel->setStyleSheet("color: #ffffffff; font-style: italic;");
     gridLayout->addWidget(autoTimeLabel, 1, 2, 1, 2);
 
     // Row 2: Add Button (Spanning all columns)
-    QPushButton *addButton = new QPushButton("✨ Add Measurement");
+    QPushButton *addButton = new QPushButton("Add Measurement");
     addButton->setObjectName("addBtn");
     addButton->setCursor(Qt::PointingHandCursor);
     addButton->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
@@ -100,10 +99,10 @@ void MainWindow::createButtonSection(QVBoxLayout *mainLayout) {
         return btn;
     };
 
-    buttonLayout->addWidget(setupButton("🗑️ Delete Selected", "deleteBtn", &MainWindow::deleteMeasurement));
-    buttonLayout->addWidget(setupButton("📂 Load from File", "loadBtn", &MainWindow::loadFromFile));
-    buttonLayout->addWidget(setupButton("💾 Save to File", "saveBtn", &MainWindow::saveToFile));
-    buttonLayout->addWidget(setupButton("📊 Refresh Stats", "statsBtn", &MainWindow::showStatistics));
+    buttonLayout->addWidget(setupButton("Delete Selected", "deleteBtn", &MainWindow::deleteMeasurement));
+    buttonLayout->addWidget(setupButton("Load from File", "loadBtn", &MainWindow::loadFromFile));
+    buttonLayout->addWidget(setupButton("Save to File", "saveBtn", &MainWindow::saveToFile));
+    buttonLayout->addWidget(setupButton("Refresh Stats", "statsBtn", &MainWindow::showStatistics));
 
     mainLayout->addLayout(buttonLayout);
 }
@@ -113,19 +112,19 @@ void MainWindow::createStatsSection(QVBoxLayout *mainLayout) {
     QGridLayout *statsLayout = new QGridLayout(statsGroup);
     statsLayout->setSpacing(10);
 
-    avgTempLabel = new QLabel("🌡️ Avg: --");
+    avgTempLabel = new QLabel("Avg: --");
     avgTempLabel->setObjectName("statLabel");
     
-    minTempLabel = new QLabel("❄️ Min: --");
+    minTempLabel = new QLabel("Min: --");
     minTempLabel->setObjectName("statLabel");
     
-    maxTempLabel = new QLabel("🔥 Max: --");
+    maxTempLabel = new QLabel("Max: --");
     maxTempLabel->setObjectName("statLabel");
     
-    avgHumidityLabel = new QLabel("💧 Humidity: --");
+    avgHumidityLabel = new QLabel("Humidity: --");
     avgHumidityLabel->setObjectName("statLabel");
     
-    avgWindLabel = new QLabel("💨 Wind: --");
+    avgWindLabel = new QLabel("Wind: --");
     avgWindLabel->setObjectName("statLabel");
 
     // Responsive grid layout for stats
@@ -217,11 +216,11 @@ void MainWindow::showStatistics() {
     const auto& measurements = station.getMeasurements();
     
     if (measurements.empty()) {
-        avgTempLabel->setText("🌡️ Avg: --");
-        minTempLabel->setText("❄️ Min: --");
-        maxTempLabel->setText("🔥 Max: --");
-        avgHumidityLabel->setText("💧 Humidity: --");
-        avgWindLabel->setText("💨 Wind: --");
+        avgTempLabel->setText("Avg: --");
+        minTempLabel->setText("Min: --");
+        maxTempLabel->setText("Max: --");
+        avgHumidityLabel->setText("Humidity: --");
+        avgWindLabel->setText("Wind: --");
         return;
     }
 
@@ -231,11 +230,11 @@ void MainWindow::showStatistics() {
     float avgHum = Analyzer::averageHumidity(measurements);
     float avgWind = Analyzer::averageWindSpeed(measurements);
 
-    avgTempLabel->setText(QString("🌡️ Avg: %1°C").arg(avgTemp, 0, 'f', 1));
-    minTempLabel->setText(QString("❄️ Min: %1°C").arg(minTemp, 0, 'f', 1));
-    maxTempLabel->setText(QString("🔥 Max: %1°C").arg(maxTemp, 0, 'f', 1));
-    avgHumidityLabel->setText(QString("💧 Humidity: %1%").arg(avgHum, 0, 'f', 1));
-    avgWindLabel->setText(QString("💨 Wind: %1 km/h").arg(avgWind, 0, 'f', 1));
+    avgTempLabel->setText(QString("Avg: %1°C").arg(avgTemp, 0, 'f', 1));
+    minTempLabel->setText(QString("Min: %1°C").arg(minTemp, 0, 'f', 1));
+    maxTempLabel->setText(QString("Max: %1°C").arg(maxTemp, 0, 'f', 1));
+    avgHumidityLabel->setText(QString("Humidity: %1%").arg(avgHum, 0, 'f', 1));
+    avgWindLabel->setText(QString("Wind: %1 km/h").arg(avgWind, 0, 'f', 1));
 }
 
 void MainWindow::refreshTable() {

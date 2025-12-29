@@ -1,0 +1,68 @@
+[
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/weather_station_console.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_console.dir\\weather_station_console_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build\\weather_station_console_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_console_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/weather_station_console.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_console.dir\\src\\Measurement.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\Measurement.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/Measurement.cpp",
+  "output": "CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/weather_station_console.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_console.dir\\src\\WeatherStation.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\WeatherStation.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/WeatherStation.cpp",
+  "output": "CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/weather_station_console.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_console.dir\\src\\Analyzer.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\Analyzer.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/Analyzer.cpp",
+  "output": "CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/weather_station_console.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_console.dir\\src\\main.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\main.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/main.cpp",
+  "output": "CMakeFiles/weather_station_console.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\weather_station_qt_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build\\weather_station_qt_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_qt_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/weather_station_qt_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\src\\Measurement.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\Measurement.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/Measurement.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/src/Measurement.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\src\\WeatherStation.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\WeatherStation.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/WeatherStation.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/src/WeatherStation.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\src\\Analyzer.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\Analyzer.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/Analyzer.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/src/Analyzer.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\src\\MainWindow.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\MainWindow.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/MainWindow.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/src/MainWindow.cpp.obj"
+},
+{
+  "directory": "C:/Users/mehdi/Documents/GitHub/CppTD/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/weather_station_qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\weather_station_qt.dir\\src\\main_qt.cpp.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\src\\main_qt.cpp",
+  "file": "C:/Users/mehdi/Documents/GitHub/CppTD/src/main_qt.cpp",
+  "output": "CMakeFiles/weather_station_qt.dir/src/main_qt.cpp.obj"
+}
+]

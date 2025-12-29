@@ -29,8 +29,9 @@ weather_station_console_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake \
+  C:/Program\ Files/CMake/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake \
+  C:/Program\ Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake \
-  C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake \
   C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
@@ -226,8 +227,6 @@ C:/Program\ Files/CMake/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake:
 
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicGitHelpers.cmake:
 
-C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-CXX.cmake:
-
 C:/Program\ Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
@@ -300,6 +299,12 @@ C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:
 
+C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
+
+C:/Program\ Files/CMake/share/cmake-4.2/Modules/Linker/GNU-CXX.cmake:
+
+C:/Program\ Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake:
+
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
 
 C:/Program\ Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-CXX.cmake:
@@ -347,8 +352,6 @@ C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
-
-C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 

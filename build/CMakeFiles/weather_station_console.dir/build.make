@@ -71,7 +71,7 @@ include CMakeFiles/weather_station_console.dir/flags.make
 weather_station_console_autogen/timestamp: C:/Qt/6.10.1/mingw_64/bin/moc.exe
 weather_station_console_autogen/timestamp: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target weather_station_console"
-	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/mehdi/Documents/GitHub/CppTD/build/CMakeFiles/weather_station_console_autogen.dir/AutogenInfo.json ""
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/mehdi/Documents/GitHub/CppTD/build/CMakeFiles/weather_station_console_autogen.dir/AutogenInfo.json Debug
 	"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/mehdi/Documents/GitHub/CppTD/build/weather_station_console_autogen/timestamp
 
 CMakeFiles/weather_station_console.dir/codegen:
@@ -82,75 +82,75 @@ CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_comp
 CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj: weather_station_console_autogen/mocs_compilation.cpp
 CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp
 
 CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp > CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp > CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_station_console.dir/weather_station_console_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp -o CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\build\weather_station_console_autogen\mocs_compilation.cpp -o CMakeFiles\weather_station_console.dir\weather_station_console_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj: CMakeFiles/weather_station_console.dir/flags.make
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj: CMakeFiles/weather_station_console.dir/includes_CXX.rsp
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj: C:/Users/mehdi/Documents/GitHub/CppTD/src/Measurement.cpp
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\Measurement.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\Measurement.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/Measurement.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\Measurement.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\Measurement.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp
 
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_station_console.dir/src/Measurement.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp > CMakeFiles\weather_station_console.dir\src\Measurement.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp > CMakeFiles\weather_station_console.dir\src\Measurement.cpp.i
 
 CMakeFiles/weather_station_console.dir/src/Measurement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_station_console.dir/src/Measurement.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp -o CMakeFiles\weather_station_console.dir\src\Measurement.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\Measurement.cpp -o CMakeFiles\weather_station_console.dir\src\Measurement.cpp.s
 
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj: CMakeFiles/weather_station_console.dir/flags.make
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj: CMakeFiles/weather_station_console.dir/includes_CXX.rsp
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj: C:/Users/mehdi/Documents/GitHub/CppTD/src/WeatherStation.cpp
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp
 
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp > CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp > CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.i
 
 CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_station_console.dir/src/WeatherStation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp -o CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\WeatherStation.cpp -o CMakeFiles\weather_station_console.dir\src\WeatherStation.cpp.s
 
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj: CMakeFiles/weather_station_console.dir/flags.make
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj: CMakeFiles/weather_station_console.dir/includes_CXX.rsp
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj: C:/Users/mehdi/Documents/GitHub/CppTD/src/Analyzer.cpp
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp
 
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp > CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp > CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.i
 
 CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_station_console.dir/src/Analyzer.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp -o CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\Analyzer.cpp -o CMakeFiles\weather_station_console.dir\src\Analyzer.cpp.s
 
 CMakeFiles/weather_station_console.dir/src/main.cpp.obj: CMakeFiles/weather_station_console.dir/flags.make
 CMakeFiles/weather_station_console.dir/src/main.cpp.obj: CMakeFiles/weather_station_console.dir/includes_CXX.rsp
 CMakeFiles/weather_station_console.dir/src/main.cpp.obj: C:/Users/mehdi/Documents/GitHub/CppTD/src/main.cpp
 CMakeFiles/weather_station_console.dir/src/main.cpp.obj: CMakeFiles/weather_station_console.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\mehdi\Documents\GitHub\CppTD\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/weather_station_console.dir/src/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/main.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\main.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\main.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/weather_station_console.dir/src/main.cpp.obj -MF CMakeFiles\weather_station_console.dir\src\main.cpp.obj.d -o CMakeFiles\weather_station_console.dir\src\main.cpp.obj -c C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp
 
 CMakeFiles/weather_station_console.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/weather_station_console.dir/src/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp > CMakeFiles\weather_station_console.dir\src\main.cpp.i
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp > CMakeFiles\weather_station_console.dir\src\main.cpp.i
 
 CMakeFiles/weather_station_console.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/weather_station_console.dir/src/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp -o CMakeFiles\weather_station_console.dir\src\main.cpp.s
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mehdi\Documents\GitHub\CppTD\src\main.cpp -o CMakeFiles\weather_station_console.dir\src\main.cpp.s
 
 # Object files for target weather_station_console
 weather_station_console_OBJECTS = \

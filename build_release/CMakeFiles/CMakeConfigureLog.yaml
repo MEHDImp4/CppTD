@@ -30,9 +30,14 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/sbin/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -81,6 +86,12 @@ events:
       - "C:/Qt/6.10.1/mingw_64/sbin/mingw32-make.exe"
       - "C:/Qt/6.10.1/mingw_64/mingw32-make.exe.com"
       - "C:/Qt/6.10.1/mingw_64/mingw32-make.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/mingw32-make.exe.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/mingw32-make.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/mingw32-make.exe.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/mingw32-make.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/mingw32-make.exe.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/mingw32-make.exe"
       - "C:/Qt/6.10.1/mingw_64/bin/mingw32-make.exe.com"
       - "C:/Qt/6.10.1/mingw_64/bin/mingw32-make.exe"
       - "C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe.com"
@@ -88,10 +99,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -168,6 +201,8 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -229,10 +264,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -309,10 +366,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -406,6 +485,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -449,10 +530,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -524,6 +627,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -567,10 +672,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -642,6 +769,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -685,10 +814,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -760,6 +911,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -803,10 +956,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -878,6 +1053,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -921,10 +1098,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -996,6 +1195,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1039,10 +1240,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1114,6 +1337,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1157,10 +1382,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1232,6 +1479,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1275,10 +1524,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1350,6 +1621,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1393,10 +1666,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1468,6 +1763,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1511,10 +1808,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1586,6 +1905,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1633,6 +1954,12 @@ events:
       - "C:/Program Files/PowerShell/7/tapi.com"
       - "C:/Program Files/PowerShell/7/tapi.exe"
       - "C:/Program Files/PowerShell/7/tapi"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/tapi.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/tapi.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/tapi"
@@ -1748,10 +2075,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1826,6 +2175,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -1873,6 +2224,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ar-13.1.com"
       - "C:/Program Files/PowerShell/7/gcc-ar-13.1.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar-13.1"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13.1.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13.1.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13.1"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13.1.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13.1.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13.1"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13.1.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13.1.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13.1"
@@ -1993,6 +2350,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ar-13.com"
       - "C:/Program Files/PowerShell/7/gcc-ar-13.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar-13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-13"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar-13"
@@ -2113,6 +2476,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ar13.com"
       - "C:/Program Files/PowerShell/7/gcc-ar13.exe"
       - "C:/Program Files/PowerShell/7/gcc-ar13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar13"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar13.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar13.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ar13"
@@ -2229,10 +2598,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -2307,6 +2698,8 @@ events:
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -2354,6 +2747,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13.1.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13.1.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13.1"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13.1.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13.1.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13.1"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13.1.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13.1.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13.1"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13.1.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13.1.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13.1"
@@ -2474,6 +2873,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib-13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-13"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib-13"
@@ -2594,6 +2999,12 @@ events:
       - "C:/Program Files/PowerShell/7/gcc-ranlib13.com"
       - "C:/Program Files/PowerShell/7/gcc-ranlib13.exe"
       - "C:/Program Files/PowerShell/7/gcc-ranlib13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib13"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib13.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib13.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib13"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib13.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib13.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/gcc-ranlib13"
@@ -2710,10 +3121,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -2788,9 +3221,14 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/sbin/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -2850,6 +3288,15 @@ events:
       - "C:/Qt/6.10.1/mingw_64/windres.com"
       - "C:/Qt/6.10.1/mingw_64/windres.exe"
       - "C:/Qt/6.10.1/mingw_64/windres"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/windres.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/windres.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/windres"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/windres.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/windres.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/windres"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/windres.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/windres.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/windres"
       - "C:/Qt/6.10.1/mingw_64/bin/windres.com"
       - "C:/Qt/6.10.1/mingw_64/bin/windres.exe"
       - "C:/Qt/6.10.1/mingw_64/bin/windres"
@@ -2858,10 +3305,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -2925,8 +3394,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp"
-      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp"
+      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0"
+      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2936,13 +3405,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp'
+        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_6a4f1/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6a4f1.dir\\build.make CMakeFiles/cmTC_6a4f1.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp'
-        Building CXX object CMakeFiles/cmTC_6a4f1.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_7e570/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7e570.dir\\build.make CMakeFiles/cmTC_7e570.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0'
+        Building CXX object CMakeFiles/cmTC_7e570.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2950,8 +3419,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_6a4f1.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\mehdi\\AppData\\Local\\Temp\\cccTQ4Bs.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7e570.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccoBfV14.s
         GNU C++17 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.25-GMP
         
@@ -2974,14 +3443,14 @@ events:
          C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
         End of search list.
         Compiler executable checksum: b3d236387f35294e2a73c51628039e05
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\'
-         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\mehdi\\AppData\\Local\\Temp\\cccTQ4Bs.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\'
+         C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccoBfV14.s
         GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_6a4f1.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6a4f1.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7e570.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7e570.dir\\link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
@@ -2992,16 +3461,16 @@ events:
         gcc version 13.1.0 (x86_64-posix-seh-rev1, Built by MinGW-Builds project) 
         COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a4f1.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6a4f1.'
-         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccCulm9E.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_6a4f1.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6a4f1.dir/objects.a --no-whole-archive --out-implib libcmTC_6a4f1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e570.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7e570.'
+         C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccNb3cNe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7e570.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7e570.dir/objects.a --no-whole-archive --out-implib libcmTC_7e570.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         collect2 version 13.1.0
-        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccCulm9E.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_6a4f1.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6a4f1.dir/objects.a --no-whole-archive --out-implib libcmTC_6a4f1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccNb3cNe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7e570.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7e570.dir/objects.a --no-whole-archive --out-implib libcmTC_7e570.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
         GNU ld (GNU Binutils) 2.39
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a4f1.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6a4f1.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_6a4f1.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_6a4f1.dir/objects.a @CMakeFiles\\cmTC_6a4f1.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_6a4f1.dir/objects.a -Wl,--no-whole-archive -o cmTC_6a4f1.exe -Wl,--out-implib,libcmTC_6a4f1.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e570.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7e570.'
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7e570.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_7e570.dir/objects.a @CMakeFiles\\cmTC_7e570.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_7e570.dir/objects.a -Wl,--no-whole-archive -o cmTC_7e570.exe -Wl,--out-implib,libcmTC_7e570.dll.a -Wl,--major-image-version,0,--minor-image-version,0
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0'
         
       exitCode: 0
   -
@@ -3040,13 +3509,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp']
+        ignore line: [Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_6a4f1/fast]
-        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_6a4f1.dir\\build.make CMakeFiles/cmTC_6a4f1.dir/build]
-        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-7s2bzp']
-        ignore line: [Building CXX object CMakeFiles/cmTC_6a4f1.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_7e570/fast]
+        ignore line: [C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7e570.dir\\build.make CMakeFiles/cmTC_7e570.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-gef9f0']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7e570.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -3054,8 +3523,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib]
         ignore line: [gcc version 13.1.0 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_6a4f1.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\mehdi\\AppData\\Local\\Temp\\cccTQ4Bs.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_7e570.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=core2 -march=nocona -version -o C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccoBfV14.s]
         ignore line: [GNU C++17 (x86_64-posix-seh-rev1  Built by MinGW-Builds project) version 13.1.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.25-GMP]
         ignore line: []
@@ -3078,8 +3547,8 @@ events:
         ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b3d236387f35294e2a73c51628039e05]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\']
-        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\mehdi\\AppData\\Local\\Temp\\cccTQ4Bs.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\']
+        ignore line: [ C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccoBfV14.s]
         ignore line: [GNU assembler version 2.39 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.39]
         ignore line: [COMPILER_PATH=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/]
@@ -3090,9 +3559,9 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_6a4f1.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_6a4f1.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_6a4f1.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_7e570.dir\\CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7e570.exe]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7e570.dir\\link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
@@ -3110,13 +3579,13 @@ events:
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a4f1.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_6a4f1.']
-        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccCulm9E.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_6a4f1.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_6a4f1.dir/objects.a --no-whole-archive --out-implib libcmTC_6a4f1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7e570.exe' '-shared-libgcc' '-mtune=core2' '-march=nocona' '-dumpdir' 'cmTC_7e570.']
+        link line: [ C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -plugin C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll -plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccNb3cNe.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 --sysroot=C:/buildroot/x86_64-1310-posix-seh-msvcrt-rt_v11-rev1/mingw64 -m i386pep -Bdynamic -o cmTC_7e570.exe C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -v --whole-archive CMakeFiles\\cmTC_7e570.dir/objects.a --no-whole-archive --out-implib libcmTC_7e570.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/Qt/Tools/mingw1310_64/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccCulm9E.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\mehdi\\AppData\\Local\\Temp\\ccNb3cNe.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -3142,7 +3611,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_6a4f1.exe] ==> ignore
+          arg [cmTC_7e570.exe] ==> ignore
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o]
           arg [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o] ==> obj [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o]
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0]
@@ -3153,10 +3622,10 @@ events:
           arg [-LC:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..] ==> dir [C:/Qt/Tools/mingw1310_64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../..]
           arg [-v] ==> ignore
           arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_6a4f1.dir/objects.a] ==> ignore
+          arg [CMakeFiles\\cmTC_7e570.dir/objects.a] ==> ignore
           arg [--no-whole-archive] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_6a4f1.dll.a] ==> ignore
+          arg [libcmTC_7e570.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -3247,8 +3716,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-rzzdiy"
-      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-rzzdiy"
+      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-65584q"
+      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-65584q"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3258,19 +3727,19 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-rzzdiy'
+        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-65584q'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_047bb/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_047bb.dir\\build.make CMakeFiles/cmTC_047bb.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-rzzdiy'
-        Building CXX object CMakeFiles/cmTC_047bb.dir/src.cxx.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles\\cmTC_047bb.dir\\src.cxx.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build_release\\CMakeFiles\\CMakeScratch\\TryCompile-rzzdiy\\src.cxx
-        Linking CXX executable cmTC_047bb.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_047bb.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_047bb.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_047bb.dir/objects.a @CMakeFiles\\cmTC_047bb.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_047bb.dir/objects.a -Wl,--no-whole-archive -o cmTC_047bb.exe -Wl,--out-implib,libcmTC_047bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_047bb.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-rzzdiy'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_7b5f0/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_7b5f0.dir\\build.make CMakeFiles/cmTC_7b5f0.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-65584q'
+        Building CXX object CMakeFiles/cmTC_7b5f0.dir/src.cxx.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles\\cmTC_7b5f0.dir\\src.cxx.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build_release\\CMakeFiles\\CMakeScratch\\TryCompile-65584q\\src.cxx
+        Linking CXX executable cmTC_7b5f0.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_7b5f0.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_7b5f0.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_7b5f0.dir/objects.a @CMakeFiles\\cmTC_7b5f0.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_7b5f0.dir/objects.a -Wl,--no-whole-archive -o cmTC_7b5f0.exe -Wl,--out-implib,libcmTC_7b5f0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_7b5f0.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-65584q'
         
       exitCode: 0
   -
@@ -3343,10 +3812,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -3471,10 +3962,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -3596,10 +4109,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -3675,8 +4210,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-dfx3t6"
-      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-dfx3t6"
+      source: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-86vwmo"
+      binary: "C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-86vwmo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -3686,19 +4221,19 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-dfx3t6'
+        Change Dir: 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-86vwmo'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_372f2/fast
-        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_372f2.dir\\build.make CMakeFiles/cmTC_372f2.dir/build
-        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-dfx3t6'
-        Building CXX object CMakeFiles/cmTC_372f2.dir/src.cxx.obj
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_372f2.dir\\src.cxx.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build_release\\CMakeFiles\\CMakeScratch\\TryCompile-dfx3t6\\src.cxx
-        Linking CXX executable cmTC_372f2.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_372f2.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_372f2.dir/objects.a
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_372f2.dir/objects.a @CMakeFiles\\cmTC_372f2.dir\\objects1.rsp
-        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_372f2.dir/objects.a -Wl,--no-whole-archive -o cmTC_372f2.exe -Wl,--out-implib,libcmTC_372f2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_372f2.dir\\linkLibs.rsp
-        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-dfx3t6'
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe -f Makefile cmTC_992e9/fast
+        C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_992e9.dir\\build.make CMakeFiles/cmTC_992e9.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-86vwmo'
+        Building CXX object CMakeFiles/cmTC_992e9.dir/src.cxx.obj
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_992e9.dir\\src.cxx.obj -c C:\\Users\\mehdi\\Documents\\GitHub\\CppTD\\build_release\\CMakeFiles\\CMakeScratch\\TryCompile-86vwmo\\src.cxx
+        Linking CXX executable cmTC_992e9.exe
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_992e9.dir\\link.txt --verbose=1
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_992e9.dir/objects.a
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\ar.exe qc CMakeFiles\\cmTC_992e9.dir/objects.a @CMakeFiles\\cmTC_992e9.dir\\objects1.rsp
+        C:\\Qt\\Tools\\mingw1310_64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_992e9.dir/objects.a -Wl,--no-whole-archive -o cmTC_992e9.exe -Wl,--out-implib,libcmTC_992e9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_992e9.dir\\linkLibs.rsp
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/mehdi/Documents/GitHub/CppTD/build_release/CMakeFiles/CMakeScratch/TryCompile-86vwmo'
         
       exitCode: 0
   -
@@ -3775,10 +4310,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -3863,9 +4420,14 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/sbin/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -3921,10 +4483,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -4064,10 +4648,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -4153,10 +4759,14 @@ events:
     candidate_directories:
       - "C:/Qt/6.10.1/mingw_64/include/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/include/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "/include/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -4205,10 +4815,14 @@ events:
     searched_directories:
       - "C:/Qt/6.10.1/mingw_64/include/vulkan/vulkan.h"
       - "C:/Qt/6.10.1/mingw_64/vulkan/vulkan.h"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/include/vulkan/vulkan.h"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/vulkan/vulkan.h"
       - "/include/vulkan/vulkan.h"
       - "C:/Qt/6.10.1/mingw_64/bin/vulkan/vulkan.h"
       - "C:/Qt/Tools/mingw1310_64/bin/vulkan/vulkan.h"
       - "C:/Program Files/PowerShell/7/vulkan/vulkan.h"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/vulkan/vulkan.h"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/vulkan/vulkan.h"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/vulkan/vulkan.h"
       - "C:/db_home/bin/vulkan/vulkan.h"
       - "C:/Windows/System32/vulkan/vulkan.h"
@@ -4258,10 +4872,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -4347,11 +4983,15 @@ events:
     candidate_directories:
       - "C:/Qt/6.10.1/mingw_64/lib/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/lib/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "/lib/"
       - "/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -4401,11 +5041,15 @@ events:
     searched_directories:
       - "C:/Qt/6.10.1/mingw_64/lib/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/lib/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "/lib/"
       - "/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -4456,10 +5100,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -4550,10 +5216,15 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/sbin/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -4613,6 +5284,15 @@ events:
       - "C:/Qt/6.10.1/mingw_64/glslc.com"
       - "C:/Qt/6.10.1/mingw_64/glslc.exe"
       - "C:/Qt/6.10.1/mingw_64/glslc"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslc.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslc.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslc"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslc.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslc.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslc"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslc.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslc.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslc"
       - "/bin/glslc.com"
       - "/bin/glslc.exe"
       - "/bin/glslc"
@@ -4625,6 +5305,12 @@ events:
       - "C:/Program Files/PowerShell/7/glslc.com"
       - "C:/Program Files/PowerShell/7/glslc.exe"
       - "C:/Program Files/PowerShell/7/glslc"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslc.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslc.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslc"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslc.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslc.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslc"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslc.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslc.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslc"
@@ -4776,10 +5462,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -4866,10 +5574,15 @@ events:
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/6.10.1/mingw_64/sbin/"
       - "C:/Qt/6.10.1/mingw_64/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/"
       - "/bin/"
       - "C:/Qt/6.10.1/mingw_64/bin/"
       - "C:/Qt/Tools/mingw1310_64/bin/"
       - "C:/Program Files/PowerShell/7/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/"
       - "C:/db_home/bin/"
       - "C:/Windows/System32/"
@@ -4929,6 +5642,15 @@ events:
       - "C:/Qt/6.10.1/mingw_64/glslangValidator.com"
       - "C:/Qt/6.10.1/mingw_64/glslangValidator.exe"
       - "C:/Qt/6.10.1/mingw_64/glslangValidator"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslangValidator.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslangValidator.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/bin/glslangValidator"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslangValidator.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslangValidator.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/sbin/glslangValidator"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslangValidator.com"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslangValidator.exe"
+      - "C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/glslangValidator"
       - "/bin/glslangValidator.com"
       - "/bin/glslangValidator.exe"
       - "/bin/glslangValidator"
@@ -4941,6 +5663,12 @@ events:
       - "C:/Program Files/PowerShell/7/glslangValidator.com"
       - "C:/Program Files/PowerShell/7/glslangValidator.exe"
       - "C:/Program Files/PowerShell/7/glslangValidator"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslangValidator.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslangValidator.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/glslangValidator"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslangValidator.com"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslangValidator.exe"
+      - "C:/Users/mehdi/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/copilotCli/glslangValidator"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslangValidator.com"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslangValidator.exe"
       - "C:/Program Files/Microsoft/jdk-21.0.9.10-hotspot/bin/glslangValidator"
@@ -5092,10 +5820,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -5235,10 +5985,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -5370,10 +6142,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
@@ -7163,10 +7957,32 @@ events:
     search_context:
       CMAKE_PREFIX_PATH:
         - "C:/Qt/6.10.1/mingw_64"
+      ENV{CMAKE_PREFIX_PATH}:
+        - "C:\\Qt\\6.10.1\\mingw_64\\lib\\cmake\\Qt6"
       ENV{PATH}:
         - "C:\\Qt\\6.10.1\\mingw_64\\bin"
         - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
+        - "C:\\Qt\\6.10.1\\mingw_64\\bin"
+        - "C:\\Qt\\Tools\\mingw1310_64\\bin"
         - "C:\\Program Files\\PowerShell\\7"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "c:\\Users\\mehdi\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\copilotCli"
         - "C:\\Program Files\\Microsoft\\jdk-21.0.9.10-hotspot\\bin"
         - "C:\\db_home\\bin"
         - "C:\\WINDOWS\\system32"
